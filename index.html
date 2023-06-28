@@ -115,6 +115,7 @@
       </span>
     </div>
     <div class="grupo-formulas">
+      <!--Formula enlazada en el capítulo 8 de QED-->
       <span class="formula-titulo">
         (1.2) Ecuación de Dirac
       </span>
@@ -495,8 +496,349 @@
   <div class="capitulo-5 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (5.1)
+        (5.1) Operadores helicidad
       </span>
+      <span class="formula-titulo">
+        Fermión
+      </span>
+      <span class="formula">
+        h_\psi = \frac{\vec{p}\cdot\vec{\Sigma}}{|\vec{p}|} = \frac{1}{2|\vec{p}|}\begin{pmatrix}
+          \vec{p}\cdot\vec{\sigma} & 0\\
+          0 & \vec{p}\cdot\vec{\sigma}\\
+        \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        Fotón
+      </span>
+      <span class="formula">
+        h_A = \frac{1}{|\vec{k}|}\begin{pmatrix}
+          0 & -ik_z & ik_y\\
+          ik_z & 0 & -ik_x\\
+          -ik_y & ik_x & 0\\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (5.2) Carga conservada
+      </span>
+      <span class="formula">
+        j^0 = \psi^\dagger h_\psi \psi + \vec{A}^* h_A \vec{A}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (5.3) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que } h_A \text{ con } \vec{k} = |\vec{k}|(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta) \text{ tiene los siguientes vectores propios:}
+      </span>
+      <span class="formula">
+        \hat{e}_{+1} = \frac{1}{\sqrt{2}}\begin{pmatrix}
+          \cos\theta\cos\phi-i\sin\phi\\
+          \cos\theta\sin\phi+i\cos\phi\\
+          -\sin\theta\\
+        \end{pmatrix}\!\!,\;\hat{e}_{0} = \frac{1}{\sqrt{2}}\begin{pmatrix}
+          \sin\theta\cos\phi\\
+          \sin\theta\sin\phi\\
+          \cos\theta\\
+        \end{pmatrix}\!\!,\;\hat{e}_{-1} = \frac{1}{\sqrt{2}}\begin{pmatrix}
+          \cos\theta\cos\phi+i\sin\phi\\
+          \cos\theta\sin\phi-i\cos\phi\\
+          -\sin\theta
+        \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 05.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 05.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 05.pdf">
+        Rodolfo Guidobono
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 05.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Miguel Ángel Montañez - Solución Ejercicio Capítulo 05.pdf">
+        Miguel Ángel Montañez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Miguel Ángel Montañez - Solución Ejercicio Capítulo 05.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <h2 id="capitulo-6"><a href="#capitulo-6" class="formulas-title">Capítulo 6: Cálculo heurístico de la sección no polarizada de una colisión</a></h2>
+  <div class="capitulo-6 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.1) Amplitud $e^- e^+ \to \mu^- \mu^+$
+      </span>
+      <span class="formula">
+        \mathcal{M}_{e^-e^+\to\mu^-\mu^+} \sim \braket{ \mu^+\mu^- \vert H_I \vert \gamma }^\mu \braket{ \gamma \vert H_I \vert e^-e^+ }_\mu
+      </span>
+      <span class="formula">
+        \braket{ \gamma(\theta, \phi) \vert H_I \vert e^-e^+ }^\mu \sim \hat{e}^\mu_{\pm 1}(\theta, \phi)
+      </span>
+      <span class="formula">
+        \frac{\mathrm{d}\sigma}{\mathrm{d}\Omega}
+        \sim \frac{1}{4}\left(|\mathcal{M}_1|^2+|\mathcal{M}_2|^2+|\mathcal{M}_3|^2+|\mathcal{M}_4|^2\right)
+        \sim 1 + \cos^2(\theta)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.2) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Calcular las siguientes amplitudes}
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1) \hspace2ex & \mathcal{M}_1 = \mathcal{M}_{e^-_Re^+_L\to \mu^-_R\mu^+_L}\\
+          2) \hspace2ex & \mathcal{M}_2 = \mathcal{M}_{e^-_Re^+_L\to \mu^-_L\mu^+_R}\\
+          3) \hspace2ex & \mathcal{M}_3 = \mathcal{M}_{e^-_Le^+_R\to \mu^-_R\mu^+_L}\\
+          4) \hspace2ex & \mathcal{M}_4 = \mathcal{M}_{e^-_Le^+_R\to \mu^-_L\mu^+_R}\\
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 06.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 06.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 06.pdf">
+        Rodolfo Guidobono
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 06.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Miguel Ángel Montañez - Solución Ejercicio Capítulo 06.pdf">
+        Miguel Ángel Montañez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Miguel Ángel Montañez - Solución Ejercicio Capítulo 06.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <h2 id="capitulo-7"><a href="#capitulo-7" class="formulas-title">Capítulo 7: The Theory Of Positrons R.P. Feynman, 1949</a></h2>
+  <div class="capitulo-7 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-14">(TCC 14.2)</a> Función de Green
+      </span>
+      <span class="formula">
+        f(x) = \int_{-\infty}^{\infty} G(x,x') \ g(x') \ dx'
+      </span>
+      <span class="formula-titulo">
+        Que, dado un operador A,
+      </span>
+      <span class="formula">
+        A \left[ f(x) \right] = g(x)
+      </span>
+      <span class="formula-titulo">
+        cumple:
+      </span>
+      <span class="formula">
+        A \left[ G(x, x') \right] = \delta(x - x')
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.1) Propagador / Función de Green
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial t} - (\hat{H}_0 + \hat{V})\right] \psi = 0
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial{t_2}}-(\hat{H}_0 + \hat{V})\right]K(\vec{x}_2, t_2;\vec{x}_1, t_1) = i\delta^{(4)}(x_1-x_2)
+      </span>
+      <span class="formula">
+        \psi(\vec{x}_2, t_2) = \int K(\vec{x}_2, t_2;\vec{x}_1, t_1) \psi(\vec{x}_1,t_1)\mathrm{d}^3 x_1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.2) Propagador en la base propia del hamiltoniano
+      </span>
+      <span class="formula">
+        (\hat{H}_0 + \hat{V})\phi_n(\vec{x}) = E_n \phi_n(\vec{x})
+      </span>
+      <span class="formula">
+        K(\vec{x}_2, t_2;\vec{x}_1, t_1) =
+        \begin{cases}
+          \sum_n \phi_n(\vec{x}_2)\phi_n^*(\vec{x}_1)e^{-i(t_2-t_1)E_n} & t_2 > t_1\\
+          0 & t_2 < t_1
+        \end{cases}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.3) Relación con el propagador libre
+      </span>
+      <span class="formula">
+        K(\vec{x}_2, t_2;\vec{x}_1, t_1) = K_0(\vec{x}_2, t_2;\vec{x}_1, t_1) + K^{(1)}(\vec{x}_2, t_2;\vec{x}_1, t_1) + K^{(2)}(\vec{x}_2, t_2;\vec{x}_1, t_1) + \cdots
+      </span>
+      <span class="formula-titulo">
+        Donde:
+      </span>
+      <span class="formula">
+        \left[i\frac{\partial}{\partial{t_2}}-\hat{H}_0\right]K_0(\vec{x}_2, t_2;\vec{x}_1, t_1) = i\delta^{(4)}(x_1-x_2)
+      </span>
+      <span class="formula">
+        K^{(1)}(\vec{x}_2, t_2;\vec{x}_1, t_1) = -i \int K_0(\vec{x}_2, t_2;\vec{x}_3, t_3)V(\vec{x}_3)K_0(\vec{x}_3, t_3;\vec{x}_1, t_1)\mathrm{d}^4x_3
+      </span>
+      <span class="formula">
+        K^{(2)}(x_2;x_1) = (-i)^2 \int K_0(x_2;x_4)V(\vec{x}_4)K_0(x_4;x_3)V(\vec{x}_3)K_0(x_3;x_1)\mathrm{d}^4x_3\mathrm{d}^4x_4
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.4) Propagador de Dirac
+      </span>
+      <span class="formula">
+        (i\gamma^\mu \partial_\mu - m)\psi = q\gamma^\mu A_\mu \psi
+      </span>
+      <span class="formula">
+        H_0 = -i\gamma^0 \gamma^j\partial_j + \gamma^0 m, \qquad V=q\gamma^0\gamma^\mu A_\mu
+      </span>
+      <span class="formula">
+        K_+(x_2;x_1) =
+        \begin{cases}
+          \sum_{\{n:E_n>0\}} \phi_n(\vec{x}_2) \bar{\phi}_n(\vec{x}_1) e^{-i(t_2-t_1)E_n} & t_2 > t_1\\
+          -\sum_{\{n:E_n<0\}} \phi_n(\vec{x}_2)\bar{\phi}_n(\vec{x}_1)e^{-i(t_2-t_1)E_n} & t_2 < t_1
+        \end{cases}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (7.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que el propagador }
+      </span>
+      <span class="formula formula-texto">
+        K(x_2;x_1) = K_0(x_2;x_1)-i\int K_0(x_2;x_3)V(\vec{x}_3)K(x_3;x_1)\mathrm{d}^4x_3
+      </span>
+      <span class="formula formula-texto">
+        \text{cumple la ecuación (7.1)}.
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 07.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 07.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <h2 id="capitulo-8"><a href="#capitulo-8" class="formulas-title">Capítulo 8: Forma explícita de los espinores para el electrón y el positrón</a></h2>
+  <div class="capitulo-8 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoElectrodinamicaCuanticaJavierGarcia/#capitulo-1">(QED 1.2)</a> Ecuación de Dirac
+      </span>
+      <span class="formula">
+        (i\gamma^\mu \partial_\mu - m)\psi = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.1) Ecuación de Dirac (representación de momentos)
+      </span>
+      <span class="formula">
+        \psi(x,t) = u(\vec{p}) e^{-ipx}
+      </span>
+      <span class="formula">
+        (\gamma^\mu p_\mu - m)u(\vec{p}) = 0
+      </span>
+      <span class="formula">
+        \begin{pmatrix}p_0 - m & -\vec{\sigma}\cdot \vec{p} \\ \vec{\sigma}\cdot \vec{p} & -p_0 - m\end{pmatrix}u(\vec{p}) = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        <a target="_blank" href="https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/#capitulo-42">(TCC 42.2)</a> Estados de helicidad
+      </span>
+      <span class="formula">
+        \chi_+ = \begin{pmatrix}
+          \cos \frac{\theta}{2} \\
+          e^{i \phi} \sin \frac{\theta}{2}
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        \chi_- = \begin{pmatrix}
+          -e^{-i \phi} \sin \frac{\theta}{2} \\
+          \cos \frac{\theta}{2}
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.2) Soluciones ecuación de Dirac
+      </span>
+      <span class="formula">
+        u_1(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\chi_+ \\ \frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_+\end{pmatrix}
+      </span>
+      <span class="formula">
+        u_2(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\chi_- \\ \frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_-\end{pmatrix}
+      </span>
+      <span class="formula">
+        E = \sqrt{\vec{p}\,{}^2+m^2}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        u_3(\vec{p}) = \sqrt{-E + m} \begin{pmatrix}\frac{\vec{\sigma}\cdot \vec{p}}{E - m}\chi_+ \\ \chi_+\end{pmatrix}
+      </span>
+      <span class="formula">
+        u_4(\vec{p}) = \sqrt{-E + m} \begin{pmatrix}\frac{\vec{\sigma}\cdot \vec{p}}{E - m}\chi_- \\ \chi_-\end{pmatrix}
+      </span>
+      <span class="formula">
+        E = -\sqrt{\vec{p}\,{}^2+m^2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.3) Tratamiento soluciones con energía negativa
+      </span>
+      <span class="formula">
+        v_1(\vec{p}) = u_4(-E, -\vec{p})
+      </span>
+      <span class="formula">
+        v_2(\vec{p}) = u_3(-E, -\vec{p})
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.4) Spinores de Dirac
+      </span>
+      <span class="formula">
+        u_1(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\chi_+ \\ \frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_+\end{pmatrix}
+      </span>
+      <span class="formula">
+        u_2(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\chi_- \\ \frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_-\end{pmatrix}
+      </span>
+      <span class="formula">
+        v_1(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_+ \\ \chi_+\end{pmatrix}
+      </span>
+      <span class="formula">
+        v_2(\vec{p}) = \sqrt{E + m} \begin{pmatrix}\frac{\vec{\sigma}\cdot \vec{p}}{E + m}\chi_- \\ \chi_-\end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que las expresiones de la fórmula 8.2}
+      </span>
+      <span class="formula formula-texto">
+        \text{cumplen la ecuación de Dirac}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 08.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 08.pdf</div>
+      </a>
     </div>
   </div>
 
@@ -528,7 +870,9 @@
   </div>
 
   <div id="footer">
-    Formulario creado por <a href="https://github.com/Crul">Crul</a> y <a href="https://github.com/Gaussian-art">Roger</a>.
+    Formulario creado por <a target="_blank" href="https://github.com/Crul">Crul</a>,
+    <a target="_blank" href="https://github.com/Gaussian-art">Roger</a> y
+    <a target="_blank" href="https://github.com/swaree">sware</a>.
   </div>
 
   <script type="text/javascript" src="lib/katex.min-0.13.18.js"></script>
